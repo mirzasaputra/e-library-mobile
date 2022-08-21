@@ -27,22 +27,23 @@ class CustomDrawer extends StatelessWidget {
           _drawerItem(
             icon: Icons.folder,
             text: 'Data Genre',
-            onTap: () {}
+            onTap: () {
+              Navigator.pushNamed(context, '/genre');
+            }
           ),
           _drawerItem(
             icon: Icons.book,
             text: 'Data Buku',
-            onTap: () {}
+            onTap: () {
+              Navigator.pushNamed(context, '/book');
+            }
           ),
           _drawerItem(
             icon: Icons.person,
             text: 'Data Anggota',
-            onTap: () {}
-          ),
-          _drawerItem(
-            icon: Icons.folder,
-            text: 'Data Genre',
-            onTap: () {}
+            onTap: () {
+              Navigator.pushNamed(context, '/member');
+            }
           ),
           const Padding(
             padding: EdgeInsets.only(
